@@ -162,9 +162,35 @@ section{position:relative;z-index:2;}
 .pill{font-size:0.8rem;font-weight:500;padding:0.6rem 1.5rem;border-radius:100px;background:var(--glass2);border:1px solid var(--glass-border);color:var(--text2);text-decoration:none;transition:all 0.2s;}
 .pill:hover{background:rgba(255,45,85,0.1);border-color:rgba(255,45,85,0.35);color:var(--white);transform:translateY(-2px);}
 
-/* ── FOOTER ── */
+/* ── FOOTER & VISITOR STATS ── */
 footer{border-top:1px solid rgba(255,255,255,0.06);text-align:center;padding:2rem 3rem;font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text3);letter-spacing:0.08em;}
 footer em{font-style:normal;color:var(--red);}
+
+.stat-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--glass2);
+  border: 1px solid var(--glass-border);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+.stat-pill:hover {
+  background: rgba(255, 45, 85, 0.1);
+  border-color: rgba(255, 45, 85, 0.35);
+  color: var(--white);
+}
+.stat-pill a { color: var(--white) !important; text-decoration: none; font-weight: 700; }
+.stat-pill img { vertical-align: middle; border-radius: 4px; }
+.stat-pill .statcounter { display: inline-flex; align-items: center; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
@@ -430,7 +456,21 @@ footer em{font-style:normal;color:var(--red);}
 </section>
 
 <footer>
-  &copy; 2025 <em>Hariprasath Ravichandran</em> — Network Security Engineer
+  <div>&copy; 2025 <em>Hariprasath Ravichandran</em> — Network Security Engineer</div>
+  
+  <div class="stat-wrap">
+    <div class="stat-pill">
+      <span style="color: var(--text3);">Total Visitors:</span>
+      <script type="text/javascript">
+      var sc_project = 13227399;
+      var sc_invisible = 0; /* CHANGED FROM 1 TO 0 to make it visible */
+      var sc_security = "ba06f775";
+      var sc_text = 2; /* Forces text rather than image */
+      </script>
+      <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+      <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13227399/0/ba06f775/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+      </div>
+  </div>
 </footer>
 
 <script>
