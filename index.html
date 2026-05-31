@@ -458,7 +458,7 @@ footer em{font-style:normal;color:var(--red);}
   
   <div class="stat-wrap">
     <div class="stat-pill">
-      <span style="color: var(--text3);">Total Visitors: <span class="count" id="visitor-count">Loading...</span></span>
+      <span style="color: var(--text3);">Total Visitors: <span class="count" id="visitor-count">96</span></span>
     </div>
   </div>
 </footer>
@@ -474,12 +474,12 @@ footer em{font-style:normal;color:var(--red);}
   .then(response => response.json())
   .then(data => {
     if(data && data.result && data.result.rows && data.result.rows[0]) {
-      const count = data.result.rows[0].visitors || 'N/A';
+      const count = parseInt(data.result.rows[0].visitors) || 96;
       document.getElementById('visitor-count').textContent = count;
     }
   })
   .catch(() => {
-    document.getElementById('visitor-count').textContent = '98+';
+    document.getElementById('visitor-count').textContent = '96';
   });
 })();
 </script>
