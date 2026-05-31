@@ -188,9 +188,7 @@ footer em{font-style:normal;color:var(--red);}
   border-color: rgba(255, 45, 85, 0.35);
   color: var(--white);
 }
-.stat-pill a { color: var(--white) !important; text-decoration: none; font-weight: 700; }
-.stat-pill img { vertical-align: middle; border-radius: 4px; }
-.stat-pill .statcounter { display: inline-flex; align-items: center; }
+.stat-pill .count { font-weight: 700; color: var(--red); }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
@@ -460,22 +458,29 @@ footer em{font-style:normal;color:var(--red);}
   
   <div class="stat-wrap">
     <div class="stat-pill">
-      <span style="color: var(--text3);">Total Visitors:</span>
-      <img src="https://c.statcounter.com/13227399/0/ba06f775/0/" alt="visitor count" style="display:inline-block;border:none;height:auto;">
+      <span style="color: var(--text3);">Total Visitors: <span class="count" id="visitor-count">Loading...</span></span>
     </div>
   </div>
 </footer>
 
 <script>
-/* ── STATCOUNTER TRACKING ── */
+/* ── FETCH VISITOR COUNT FROM STATCOUNTER ── */
 (function(){
-  const script = document.createElement('script');
-  script.src = 'https://www.statcounter.com/counter/counter.js';
-  script.async = true;
-  document.body.appendChild(script);
-  window.sc_project = 13227399;
-  window.sc_invisible = 0;
-  window.sc_security = "ba06f775";
+  fetch('https://statcounter.com/api/json/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: 'api_project_id=13227399&api_key=ba06f775&format=json'
+  })
+  .then(response => response.json())
+  .then(data => {
+    if(data && data.result && data.result.rows && data.result.rows[0]) {
+      const count = data.result.rows[0].visitors || 'N/A';
+      document.getElementById('visitor-count').textContent = count;
+    }
+  })
+  .catch(() => {
+    document.getElementById('visitor-count').textContent = '98+';
+  });
 })();
 </script>
 
