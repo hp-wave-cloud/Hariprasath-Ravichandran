@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Hariprasath Ravichandran
 
-### Network Security Engineer | Cloud & Infrastructure Enthusiast | DevOps Learner
+### Network Security Engineer | Cloud & Infrastructure Enthusiast
 
 Welcome to my portfolio website! I'm a Network Security Engineer with 4+ years of experience in enterprise networking, cybersecurity, infrastructure management, and cloud technologies.
 
@@ -16,10 +16,8 @@ Currently, I work on securing and optimizing enterprise networks while continuou
 
 - Network Security
 - Cloud Computing
-- DevOps
 - Infrastructure Automation
 - Cybersecurity
-- Linux Administration
 
 ---
 
@@ -45,22 +43,15 @@ Currently, I work on securing and optimizing enterprise networks while continuou
 ### Cloud & Infrastructure
 - AWS
 - Azure
-- Docker
-- Kubernetes
-- Linux
 - VMware
 
 ### Automation & Tools
 - Git
 - GitHub
-- Ansible
-- Python
-- Bash Scripting
 
 ### Monitoring & Troubleshooting
 - Wireshark
 - SolarWinds
-- PRTG
 - Splunk
 
 ---
@@ -97,7 +88,6 @@ Cloud deployment and automation projects using AWS and modern DevOps practices.
 ## 🎯 Current Goals
 
 - Advance expertise in Cloud Security
-- Learn Kubernetes and DevOps at scale
 - Build real-world automation projects
 - Contribute to open-source initiatives
 - Expand cybersecurity knowledge
