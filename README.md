@@ -46,12 +46,14 @@ Currently, I work on securing and optimizing enterprise networks while continuou
 - VMware
 
 ### Automation & Tools
+- MS Power Automate
 - Git
 - GitHub
 
 ### Monitoring & Troubleshooting
 - Wireshark
 - SolarWinds
+- FortiMonitor
 - Splunk
 
 ---
@@ -80,6 +82,9 @@ A responsive portfolio website showcasing my professional experience, technical 
 ### 🔒 Network Security Lab
 Hands-on security testing and firewall implementation lab environment.
 
+### 💼 Internship In Hethical Hacking and Pen Testing
+Hands-on experience in cybersecurity, focusing on vulnerability assessment, reconnaissance, web application security testing, and penetration testing methodologies.
+
 ### ☁️ Cloud Infrastructure Projects
 Cloud deployment and automation projects using AWS and modern DevOps practices.
 
@@ -99,8 +104,6 @@ Cloud deployment and automation projects using AWS and modern DevOps practices.
 - Fortinet Certifications
 - Networking & Security Certifications
 - Cloud Technology Certifications
-
-*(Update this section with your actual certifications.)*
 
 ---
 
